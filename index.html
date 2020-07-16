@@ -15,6 +15,7 @@
 
         html {
             scroll-behavior: smooth;
+            scroll-snap-align: center;
         }
 
 
@@ -64,14 +65,15 @@
 
         }
 
-        header h1{
+        header h1 {
             font-family: 'Nunito', sans-serif;
             font-size: 26px;
             text-align: end;
             padding-right: 13%;
+            padding-top: 50px;
         }
-        
-        header p{
+
+        header p {
             font-family: 'Nunito', sans-serif;
             font-size: 18px;
             text-align: end;
@@ -110,7 +112,8 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
-            margin-top: 8%;
+            margin-top: 12%;
+            padding-top: 70px;
         }
 
         .section_container h2 {
@@ -135,13 +138,14 @@
             display: inline-block;
             text-align: center;
         }
-        
-        .text_align a:hover{
+
+        .text_align a:hover {
             opacity: 0.5;
             -webkit-transition: .3s ease-in-out;
             transition: .3s ease-in-out;
             overflow: hidden;
         }
+
 
         /* Form */
 
@@ -158,8 +162,8 @@
 
         input[type="text"],
         textarea {
-            outline:none;
-            border:none;
+            outline: none;
+            border: none;
             border-bottom: 1px solid black;
             width: 300px;
         }
@@ -207,19 +211,19 @@
             <li> <a href="#decal">Decal</a></li>
             <li> <a href="#bags">Bags</a></li>
             <li> <a href="#front-end">Front-End</a></li>
-            <li> <a href="#stained_glass">Stained Glass</a></li>
             <li> <a href="#branding">Branding</a></li>
+            <li> <a href="#stained_glass">Stained Glass</a></li>
             <li> <a href="#resume">Resume</a></li>
             <li> <a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header>
+    <header id="home">
         <h1>Bruno's Portfolio</h1>
         <p>Graphic | Product | Front-End</p>
     </header>
 
-    <div class="row" id="home">
+    <div class="row">
         <div class="column">
             <a href="#decal"> <img src="images/mini_chest_of_drawers.jpg" style="width:100%"></a>
             <a href="#stained_glass"><img src="images/stained-glass.png" style="width:100%"></a>
@@ -236,16 +240,11 @@
         </div>
     </div>
 
-    <br>
-    <br>
-    <br>
 
     <section class="section_container" id="decal">
-
         <div class="section_contents">
             <img src="images/moppe_ikea.png" alt="Moppe Ikea" style="width:100%">
         </div>
-
         <div class="section_contents">
             <div class="text_align">
                 <h2>Ikea Moppe Makeover</h2>
@@ -259,15 +258,10 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sit saepe dolores quisquam voluptatibus atque quae inventore.</p>
             </div>
         </div>
-
     </section>
 
-    <br>
-    <br>
-    <br>
 
     <section class="section_container" id="bags">
-
         <div class="section_contents">
             <div class="text_align">
                 <h2>elemental (bags)</h2>
@@ -281,26 +275,16 @@
                 <a href="images/vector_thousand_words_bag.png" data-lightbox="elemental_bags"></a>
             </div>
         </div>
-
         <div class="section_contents">
             <img src="images/kiss_me_bag.jpg" alt="Elemental Bags" style="width: 100%">
         </div>
-
     </section>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
 
     <section class="section_container" id="front-end">
-
-
         <div class="section_contents">
             <img src="images/computer.png" alt="Front-End" style="width: 100%">
         </div>
-
         <div class="section_contents">
             <div class="text_align">
                 <h2>Front-End Development</h2>
@@ -310,15 +294,10 @@
                 <img src="images/pngwave.png" alt="HTML5" style="width: 100%">
             </div>
         </div>
-
     </section>
 
-    <br>
-    <br>
-    <br>
 
     <section class="section_container" id="branding">
-
         <div class="section_contents">
             <div class="text_align">
                 <h2>Creating a New Brand</h2>
@@ -331,23 +310,15 @@
                 <img src="images/pet-shop-blue_card.png" alt="Pet Shop Blue" style="width: 100%">
             </div>
         </div>
-
         <div class="section_contents">
             <img src="images/pet-shop-blue-shop.jpg" alt="Pet Shop Blue" style="width: 100%">
         </div>
-
     </section>
 
-    <br>
-    <br>
-    <br>
-
     <section class="section_container" id="stained_glass">
-
         <div class="section_contents">
             <img src="images/stained-glass.png" alt="Stained Glass" style="width: 100%">
         </div>
-
         <div class="section_contents">
             <div class="text_align">
                 <h2>Stained Glass Hobbyist</h2>
@@ -358,15 +329,9 @@
                 <img src="images/vector_stained_glass.png" alt="Stained Glass" style="width: 100%">
             </div>
         </div>
-
     </section>
 
-    <br>
-    <br>
-    <br>
-
     <section class="section_container" id="resume">
-
         <div class="section_contents">
             <div class="text_align">
                 <h2>Curriculum Vitae</h2>
@@ -383,22 +348,13 @@
                     Administrative Assistant, ABC Company, City, State, 2006 to present
                     - Use a combination of verbs and nouns to describe job duties and accomplishments that are most relevant to the work you are currently seeking.
                     - Don't forget to include a variety of targeted keywords
-                    - List jobs in reverse chronological order; your most recent job goes first.
-
-                    Administrative Assistant, XYZ Company, City, State, 2000 to 2006
-                    - Continue to use verbs and nouns to describe job duties and accomplishments that are most relevant to the work you are currently seeking and target important keywords.</p>
+                    - List jobs in reverse chronological order; your most recent job goes first.</p>
             </div>
         </div>
-
         <div class="section_contents">
             <img src="images/resume.jpg" alt="Resume" style="width: 100%">
         </div>
-
     </section>
-
-    <br>
-    <br>
-    <br>
 
     <section class="section_container" id="contact">
         <div class="section_contents">
@@ -406,7 +362,6 @@
                 <h2>Leave Your Message</h2>
                 <br>
                 <br>
-
                 <form action="">
 
                     <label>First Name</label><br><br>
@@ -442,11 +397,9 @@
 
     <footer>
         <p>Footer</p>
-
     </footer>
-
-
 
     <script src="lightbox-plus-jquery.js"></script>
 
-</body></html>
+</body>
+</html>
