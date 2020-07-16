@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="lightbox.css">
+
+    <style>
+        * {
+            margin: 0;
+            text-decoration: none;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+
+        /* Navigation Bar */
+
+        nav {
+            top: 0;
+            display: block;
+            position: fixed;
+            width: 100%;
+            background-color: white;
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: white;
+            width: 100%;
+        }
+
+        li {
+            display: inline-block;
+            float: left;
+        }
+
+        li a {
+            display: block;
+            padding: 10px;
+            font-family: 'Nunito', sans-serif;
+            font-weight: 400;
+            line-height: 14px 16px;
+            color: black;
+        }
+
+        li a:hover {
+            color: red;
+        }
+
+        /* Header */
+
+        header {
+            display: block;
+            margin-top: 5%;
+
+        }
+
+        header h1,
+        p {
+            font-family: 'Nunito', sans-serif;
+            text-align: end;
+            padding-right: 13%;
+        }
+
+        /* Home Page Image Block */
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 4%;
+        }
+
+        .column {
+            flex: wrap;
+            max-width: 25%;
+        }
+
+        .column img {
+
+            vertical-align: middle;
+        }
+
+        .column a:hover {
+            opacity: 0.5;
+            -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            overflow: hidden;
+        }
+
+        /* Sections */
+
+        .section_container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 8%;
+        }
+
+        .section_container h2 {
+            font-family: 'Nunito', sans-serif;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: right;
+        }
+
+        .section_container p {
+            font-family: 'Nunito', sans-serif;
+            display:flex;
+            justify-content: right;
+        }
+
+        .section_contents {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 35%;
+            padding: 10px;
+        }
+
+        /* Form */
+
+        form {
+            margin-top: 5%;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            font-family: 'Nunito', sans-serif;
+        }
+
+        input[type="text"],
+        textarea {
+            outline: none;
+            border: none;
+            border-bottom: 1px solid black;
+            width: 300px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        input[type="submit"] {
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: red;
+            color: white;
+        }
+
+        /* Footer */
+
+        footer {
+            display: block;
+            width: 100%;
+            background-color: #E2DFD9;
+            color: white;
+            text-align: center;
+            margin-top: 5%;
+        }
+
+        footer p {
+            font-family: 'Nunito', sans-serif;
+            padding: 10px 10px;
+        }
+        
+    </style>
+    
+</head>
+
+<body>
+   
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li> <a href="#decal">Decal</a></li>
+            <li> <a href="#bags">Bags</a></li>
+            <li> <a href="#front-end">Front-End</a></li>
+            <li> <a href="#stained_glass">Stained Glass</a></li>
+            <li> <a href="#branding">Branding</a></li>
+            <li> <a href="#resume">Resume</a></li>
+            <li> <a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Bruno's Portfolio</h1>
+        <p>Graphic | Product | Front-End</p>
+    </header>
+
+    <div class="row" id="home">
+        <div class="column">
+            <a href="#decal"> <img src="images/mini_chest_of_drawers.jpg" style="width:100%"></a>
+            <a href="#stained_glass"><img src="images/stained-glass.png" style="width:100%"></a>
+        </div>
+
+        <div class="column">
+            <a href="#bags"><img src="images/kiss_me_bag.jpg" style="width:100%"></a>
+            <a href="#branding"><img src="images/pet-shop-blue.png" style="width:100%"></a>
+        </div>
+
+        <div class="column">
+            <a href="#front-end"><img src="images/computer.png" style="width:100%"></a>
+            <a href="#resume"><img src="images/resume.jpg" style="width:100%"></a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="section_container" id="decal">
+
+        <div class="section_contents">
+            <img src="images/moppe_ikea.png" alt="Moppe Ikea" style="width:100%">
+        </div>
+
+        <div class="section_contents">
+            <h2>Ikea Moppe Makeover</h2>
+            <p>Creative Design Decals</p>
+            <img src="images/patterns_stickers.png" alt="Stickers" style="width: 100%">
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores sit saepe dolores quisquam voluptatibus atque quae inventore.</p>
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="section_container" id="bags">
+
+        <div class="section_contents">
+            <h2>elemental (bags)</h2>
+            <br>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse tempore asperiores et, odit placeat, laudantium consequuntur beatae similique delectus. Enim, voluptatem iusto? Sunt minima laborum aliquam sapiente, magnam reprehenderit soluta!</p>
+            <br>
+            <a href="images/vector_kiss_me_bag.png" data-lightbox="elemental_bags"> <img src="images/elemental_bags.png" alt="Elemental Bags" style="width: 100%"> </a>
+            <a href="images/vector_i_love_you_bag.png" data-lightbox="elemental_bags"></a>
+            <a href="images/vector_i_heart_berlin_bag.png" data-lightbox="elemental_bags"></a>
+            <a href="images/vector_important_bag.png" data-lightbox="elemental_bags"></a>
+            <a href="images/vector_word_love_bag.png" data-lightbox="elemental_bags"></a>
+            <a href="images/vector_thousand_words_bag.png" data-lightbox="elemental_bags"></a>
+        </div>
+
+        <div class="section_contents">
+            <img src="images/kiss_me_bag.jpg" alt="Elemental Bags" style="width: 100%">
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <section class="section_container" id="front-end">
+
+
+        <div class="section_contents">
+            <img src="images/computer.png" alt="Front-End" style="width: 100%">
+        </div>
+
+        <div class="section_contents">
+            <h2>Front-End Development</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit fuga dolores adipisci non eaque magni, officia, magnam quod sed mollitia quam ullam beatae soluta dolore? Suscipit temporibus ratione officia voluptates.</p>
+            <img src="images/pngwave.png" alt="HTML5" style="width: 100%">
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="section_container" id="stained_glass">
+
+        <div class="section_contents">
+            <h2>Stained Glass</h2>
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem illum inventore molestias fuga, dicta, quidem quis eius cumque molestiae in rem autem quos veniam laboriosam esse distinctio, earum, maxime necessitatibus!</p>
+            <img src="images/vector_stained_glass.png" alt="Stained Glass" style="width: 100%">
+        </div>
+
+
+        <div class="section_contents">
+            <img src="images/stained-glass.png" alt="Stained Glass" style="width: 100%">
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="section_container" id="branding">
+
+        <div class="section_contents">
+            <img src="images/pet-shop-blue-shop.jpg" alt="Pet Shop Blue" style="width: 100%">
+        </div>
+
+        <div class="section_contents">
+            <h2>Branding of <br> the Pet Shop Blue</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam aperiam, illum debitis sapiente praesentium laboriosam tenetur doloremque, officiis in magni nihil, obcaecati illo accusamus nemo id quidem quia ipsam fugiat.</p>
+            <img src="images/pet-shop-blue_card.png" alt="Pet Shop Blue" style="width: 100%">
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="section_container" id="resume">
+
+        <div class="section_contents">
+            <h2>Curriculum Vitae</h2>
+
+            <br>
+            <br>
+            <br>
+
+            <p>- Include your most marketable skills and accomplishments here.
+                - Ensure the skills you list are relevant to the type of job you are seeking.
+                - Be as specific as possible.
+                - Ensure that this section is full of the keywords employers will likely use when sorting resumes.
+                - If keywords are commonly stated more than on way, you must use both forms of the word (for example, Master of Business Administration and MBA)
+
+                WORK EXPERIENCE
+
+                Administrative Assistant, ABC Company, City, State, 2006 to present
+                - Use a combination of verbs and nouns to describe job duties and accomplishments that are most relevant to the work you are currently seeking.
+                - Don't forget to include a variety of targeted keywords
+                - List jobs in reverse chronological order; your most recent job goes first.
+
+                Administrative Assistant, XYZ Company, City, State, 2000 to 2006
+                - Continue to use verbs and nouns to describe job duties and accomplishments that are most relevant to the work you are currently seeking and target important keywords.</p>
+        </div>
+
+        <div class="section_contents">
+            <img src="images/resume.jpg" alt="Resume" style="width: 100%">
+        </div>
+
+    </section>
+
+    <br>
+    <br>
+    <br>
+
+    <section class="section_container" id="contact">
+        <div class="section_contents">
+            <h2>Leave Your Message</h2>
+            <br>
+            <br>
+
+            <form action="">
+
+                <label>First Name</label>
+                <input type="text" name="fn"><br><br>
+
+                <label>Last Name</label>
+                <input type="text" name="ln"><br><br>
+
+                <label>Email</label><br>
+                <input type="text" name="Email">
+
+                <label>Your Message</label>
+                <textarea name="msg"></textarea><br><br>
+
+                <input type="checkbox" name="newsletter" value="subscribe">
+                <label for="newsletter">Newsletter</label><br><br>
+
+                <label for="language">Preferred Laguage</label>
+
+                <select name="language" id="language">
+                    <option value="english">English</option>
+                    <option value="german">German</option>
+                    <option value="portuguese">Portuguese</option>
+                </select>
+
+                <br><br>
+
+                <input type="submit" value="Submit">
+            </form>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>Footer</p>
+
+    </footer>
+
+
+
+    <script src="lightbox-plus-jquery.js"></script>
+
+</body></html>
